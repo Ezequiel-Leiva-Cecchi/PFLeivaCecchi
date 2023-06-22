@@ -276,6 +276,7 @@ main .info {
   background-color: #494848;
   justify-content: center;
   flex-direction: row;
+  text-align: center;
   gap: 20px;
 }
 main .info svg {
