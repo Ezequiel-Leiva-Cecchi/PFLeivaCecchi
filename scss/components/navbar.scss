@@ -1,0 +1,51 @@
+ /*menu principal*/
+ nav {
+   font-family: $font-nav-footer;
+   
+   .navbar {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr, 1fr;
+     background-color: $nav-y-footer-color;
+     padding: 25px;
+
+     .logo {
+       @include logo(column, start, start, 60%, 10px, 200px, 24px, bold, 10px);
+     }
+
+     .dropdown-menu {
+       background-color: #191919;
+
+       .dropdown-item {
+         color: #FF5E03;
+       }
+     }
+
+     .navbar-toggler {
+       color: #FF5E03;
+     }
+
+     .nav-link {
+       display: inline;
+       padding: 10px;
+       margin: 10px;
+       font-size: 26px;
+       font-weight: bold;
+       background-position: 50% 100%;
+       background-repeat: no-repeat;
+       background-size: 0% 3px;
+       transition: background-size 0.3s;
+       color: #FF5E03;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       flex-direction: row-reverse;
+
+       &:hover {
+         color: aliceblue;
+         background-image: linear-gradient(white, white);
+         background-size: 100% 3px;
+       }
+     }
+   }
+ }
