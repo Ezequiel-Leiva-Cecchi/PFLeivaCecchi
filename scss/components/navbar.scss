@@ -1,7 +1,7 @@
  /*menu principal*/
  nav {
    font-family: $font-nav-footer;
-   
+
    .navbar {
      display: grid;
      grid-template-columns: 1fr;
@@ -15,6 +15,11 @@
 
      .dropdown-menu {
        background-color: #191919;
+
+       .nav-link-dropdown-toggle{
+          color: #FF5E03;
+       }
+     
 
        .dropdown-item {
          color: #FF5E03;
